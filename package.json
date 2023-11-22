@@ -2,7 +2,7 @@
   "name": "bricks",
   "version": "1.0.0",
   "description": "This is a CLI application that receives 2 arguments and represent the created wall in ASCII. Easy-peasy.",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +12,8 @@
     "embet"
   ],
   "author": "Ignacio Lopezosa Serrano",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
 }
