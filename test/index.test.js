@@ -47,3 +47,21 @@ describe("Walls", () => {
     expect(build(10, 7)).toBe(wall10_7);
   });
 });
+
+describe("Errors", () => {
+  test("build() should return null", () => {
+    expect(build()).toBe(null);
+  });
+
+  test("build(0, 0) should return null", () => {
+    expect(build(0, 0)).toBe(null);
+  });
+
+  test('build("eight") should return null', () => {
+    expect(build("eight")).toBe(null);
+  });
+
+  test("build(12, -4) should return null", () => {
+    expect(build(12, -4)).toBe(null);
+  });
+});
