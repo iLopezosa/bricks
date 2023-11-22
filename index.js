@@ -31,9 +31,9 @@ let wall = "";
 for (let row= 0; row < rows; row++) {
   const isRowEven = row % 2 === 0;
   if (isRowEven) {
-    wall += (fullBrick + mortar).repeat(columns - 1) + fullBrick + "\n";
+    wall = (fullBrick + mortar).repeat(columns - 1) + fullBrick + "\n" + wall;
   } else {
-    wall += halfBrick + (mortar + fullBrick).repeat(columns - 1) + mortar + halfBrick + "\n";   
+    wall = halfBrick + (mortar + fullBrick).repeat(columns - 1) + mortar + halfBrick + "\n" + wall;   
   }
 }
 
