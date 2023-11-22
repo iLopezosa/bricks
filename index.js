@@ -16,3 +16,9 @@ if (
   console.error("Incorrect arguments");
   return null;
 }
+
+const amountOfBricks = rows * columns;
+const MAX_BRICKS = 10_000;
+if (amountOfBricks > MAX_BRICKS) {
+  return "Naah, too much...here's my resignation.";
+}
