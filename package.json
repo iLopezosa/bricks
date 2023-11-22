@@ -1,0 +1,16 @@
+{
+  "name": "bricks",
+  "version": "1.0.0",
+  "description": "This is a CLI application that receives 2 arguments and represent the created wall in ASCII. Easy-peasy.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "bricks",
+    "rviewer",
+    "embet"
+  ],
+  "author": "Ignacio Lopezosa Serrano",
+  "license": "ISC"
+}
