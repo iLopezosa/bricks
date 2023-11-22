@@ -32,7 +32,7 @@ function build(rows, columns) {
   }
 
   console.log(wall);
-  return wall;
+  return wall.trim();
 }
 
 function main() {
