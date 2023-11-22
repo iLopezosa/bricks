@@ -65,3 +65,10 @@ describe("Errors", () => {
     expect(build(12, -4)).toBe(null);
   });
 });
+
+describe("Too much...", () => {
+  test("build(123, 1024) should return 'Naah, too much...here's my resignation.'", () => {
+    const message = "Naah, too much...here's my resignation.";
+    expect(build(123, 1024)).toBe(message);
+  });
+});
