@@ -1,13 +1,13 @@
 const { argv } = require("process");
 
-export function build(rows, columns) {
+function build(rows, columns) {
   if (
     isNaN(rows)
     || isNaN(columns)
     || rows < 1
     || columns < 1
   ) {
-    console.error("Incorrect arguments");
+    console.error("Incorrect arguments", rows, columns);
     return null;
   }
 
@@ -47,3 +47,5 @@ function main() {
 }
 
 main();
+
+module.exports = build;
